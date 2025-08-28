@@ -1,0 +1,22 @@
+Suggested Development Roadmap
+-----------------------------
+1.Setup project skeleton (Spring Boot + Swagger + DB + JWT auth)
+
+2.Implement User & RBAC
+
+3.Implement Account & Transactions
+
+4.Integrate Razorpay (test mode)
+
+5.Add Webhook handling + Payment Service
+
+6.Implement Audit & Logging
+
+7.Fraud Detection Rules
+
+8.Admin Dashboard APIs
+
+9.Testing (unit + integration + load)
+
+10.Harden Security
+--------------------------------------------------------------------------------------

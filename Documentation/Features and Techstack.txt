@@ -1,0 +1,64 @@
+Plan for Banking Application
+----------------------------
+It will support only for Razorpay Payment gateway
+----------------------------------------------------------------------------------------
+Account creation & KYC
+Multiple account types (Savings, Current, Loan, Credit Card)
+Transactions (deposits, withdrawals, transfers)
+Payments (bill pay, shopping)
+Admin dashboards
+Fraud detection alerts
+multi-user with role-based access control (RBAC)
+
+------------------------------------------------------------------------------------
+Architecture Document & API Contract from Day 1.
+Use Swagger/OpenAPI to define REST endpoints.
+--------------------------------------------------------------------------------------
+User & Authentication
+---------------------
+Spring Security + JWT tokens
+
+Role-based permissions (ADMIN, CUSTOMER, BANK_MANAGER)
+------------------------------------------------------------------------
+Banking Core
+-----------
+Accounts, transactions, statements
+
+Double-entry bookkeeping (debit-credit) for accuracy
+------------------------------------------------------------------------------------
+Payment Gateway Module
+------------------------
+Razorpay Service
+
+Payment Service
+
+Webhook handler
+-----------------------------------------------------------------------------
+Audit & Logging
+--------------------
+Every transaction and login attempt must be logged
+----------------------------------------------------------------------------------------
+Fraud Detection Engine (optional, but realistic)
+--------------------------------------------------
+Flag suspicious patterns (e.g., high-frequency payments)
+-----------------------------------------------------------------------------------------
+
+Backend: Spring Boot (REST APIs)
+
+Database: PostgreSQL/MySQL
+
+Cache: Redis
+
+Docs: Swagger/OpenAPI
+
+Logging: SLF4J + Logback
+
+Testing: JUnit, Mockito, Postman
+
+Payment: Razorpay Java SDK
+
+Build Tool: Maven/Gradle
+
+Deployment: Docker (future: Kubernetes for scaling)
+-------------------------------------------------------------------------------------------
+
